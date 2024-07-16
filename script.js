@@ -1,32 +1,31 @@
-// menu bar 
-const menuBar = document.querySelector(".menuBar");
-const navDiv = document.querySelector(".navDiv");
-let menuBarActive = false;
-
-menuBar.addEventListener("click", function() {
-    menuBarActive = !menuBarActive;
-    if (menuBarActive) {
-        menuBar.classList.add("addEnd");
-        menuBar.classList.remove("addStart");
-        navDiv.classList.add("navDivStart");
-        navDiv.classList.remove("navDivClose");
-    } else {
-        menuBar.classList.add("addStart");
-        menuBar.classList.remove("addEnd");
-        navDiv.classList.add("navDivClose");
-        navDiv.classList.remove("navDivStart");
-    }
-});
 
 
 // horizontal scroll
-gsap.to(".slide",{
-    scrollTrigger : {
-        trigger : ".real",
-        start : "top top",
-        end : "bottom bottom", 
-        scrub : 1
-    },
-    xPercent : -200,
-    ease :Power4
-});
+// gsap.to(".slide",{
+//     scrollTrigger : {
+//         trigger : ".real",
+//         start : "top top",
+//         end : "bottom bottom", 
+//         scrub : 1
+//     },
+//     xPercent : -200,
+//     ease :Power4
+// });
+
+
+var slideCont = document.querySelector(".slideCont");
+var section2 = document.querySelector(".section2");
+
+gsap.to(slideCont,{
+    transform:"translateX(-201.5%)",
+    scrollTrigger:{
+        trigger: section2,
+        scroller:"body",
+        markers:true,
+        start:"top 0%",
+        end:"top -200%",
+        scrub:2,
+        pin:true
+
+    }
+})
