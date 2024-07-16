@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.5"
+  },
+  "dependencies": {
+    "@splinetool/runtime": "^1.9.0"
   }
 }

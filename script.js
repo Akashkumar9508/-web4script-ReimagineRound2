@@ -21,7 +21,7 @@ gsap.to(slideCont,{
     scrollTrigger:{
         trigger: section2,
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 0%",
         end:"top -200%",
         scrub:2,
