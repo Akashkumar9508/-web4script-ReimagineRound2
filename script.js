@@ -6,7 +6,7 @@ window.addEventListener('load', function() {
         loader.style.display = 'none';
         content.style.display = 'block';
         initializeScrollTrigger();
-    }, 2000); 
+    }, 200); 
 });
 function initializeScrollTrigger() {
     const slideCont = document.querySelector(".slideCont");
