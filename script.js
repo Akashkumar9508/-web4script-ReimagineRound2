@@ -1,5 +1,4 @@
 // menu bar 
-
 const menuBar = document.querySelector(".menuBar");
 const navDiv = document.querySelector(".navDiv");
 let menuBarActive = false;
