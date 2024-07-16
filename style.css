@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+.navList ul li{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
