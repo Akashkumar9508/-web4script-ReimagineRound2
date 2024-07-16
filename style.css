@@ -12,8 +12,8 @@ background: linear-gradient(0deg, rgba(251, 146, 60, 0.507) 17%, rgba(255,255,25
 }
 /* Hide scrollbars for the entire website */
 
-html::-webkit-scrollbar, 
+/* html::-webkit-scrollbar, 
 body::-webkit-scrollbar {
   display: none;
-}
+} */
 
