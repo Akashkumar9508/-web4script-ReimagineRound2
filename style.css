@@ -5,3 +5,8 @@
     font-weight: 800;
     font-style: normal;
 }
+
+.circle{
+  /* background: rgb(251,146,60); */
+background: linear-gradient(0deg, rgba(251, 146, 60, 0.507) 17%, rgba(255,255,255,1) 75%);
+}
