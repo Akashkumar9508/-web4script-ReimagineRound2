@@ -13,8 +13,8 @@
 // });
 
 
-var slideCont = document.querySelector(".slideCont");
-var section2 = document.querySelector(".section2");
+const slideCont = document.querySelector(".slideCont");
+const section2 = document.querySelector(".section2");
 
 gsap.to(slideCont,{
     transform:"translateX(-201.5%)",
