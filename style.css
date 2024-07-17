@@ -90,10 +90,14 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.slide{
+.slide1{
   background-image: url(./Assets/bacgroundImage.jpg);
 }
-
+.slide2{
+  background-image: url(./Assets/dj.png);
+  background-position: center;
+  
+}
 .traingle{
   clip-path: polygon(100% 49%, 0 0, 0 98%);
   filter: saturate(5);
