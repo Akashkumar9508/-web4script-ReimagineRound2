@@ -52,10 +52,11 @@ function initializeScrollTrigger() {
       duration:2,
       ease: "elastic.out(1,0.3)",
     });
+    
     tl1.from(".circle",{
       opacity:0,
       duration:2,
-      ease:"power1.inout",
+      ease: "back.out(1.7)",
     });
     tl1.from(".mainText1",{
       x:-500,
@@ -69,6 +70,18 @@ function initializeScrollTrigger() {
       duration:1,
       ease:"power1.inout",
     },'mainText');
+    tl1.from(".threeDModleRight",{
+      x:700,
+      // rotate:"360deg",
+      duration:2,
+      ease: "expo.inOut",
+    },'bottle');
+    tl1.from(".threeDModleLeft",{
+      x:-700,
+      // rotate:"360deg",
+      duration:2,
+      ease: "back.out(1.7)",
+    },'bottle');
     tl1.from(nav,{
         y: -100,
         opacity:0,
@@ -80,13 +93,13 @@ function initializeScrollTrigger() {
         x:-100,
         opacity:0,
         duration:1,
-        ease:"power1.inout",
+        ease: "circ.out",
       },'icon');
       tl1.from(".iconSection2",{
         x:100,
         opacity:0,
         duration:1,
-        ease:"power1.inout",
+        ease: "circ.out",
       },'icon');
       tl1.from(".exploreSection",{
         x:-100,
