@@ -83,7 +83,13 @@ function initializeScrollTrigger() {
         ease:"power1.inout",
       },'icon');
       tl1.from(".iconSection2",{
-        right:-100,
+        x:100,
+        opacity:0,
+        duration:1,
+        ease:"power1.inout",
+      },'icon');
+      tl1.from(".exploreSection",{
+        x:-100,
         opacity:0,
         duration:1,
         ease:"power1.inout",
