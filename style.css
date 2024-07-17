@@ -25,3 +25,8 @@ body::-webkit-scrollbar {
 .slide{
   background-image: url(./Assets/bacgroundImage.jpg);
 }
+
+.traingle{
+  clip-path: polygon(100% 49%, 0 0, 0 98%);
+  filter: saturate(5);
+}
