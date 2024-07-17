@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Coolberg</title>
+    <script src="https://unpkg.com/lenis@1.1.4/dist/lenis.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -14,7 +15,7 @@
         <div class="animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-orange-600"></div>
     </div>
     <div class="cursor"></div>
-    <main id="content" class="h-full w-full relative flex-col font-['Della_Respira'] bg-[#FF8F00] z-[9999]" style="display:none;">
+    <main id="content" class="overflow-hidden h-full w-full relative flex-col font-['Della_Respira'] bg-[#FF8F00]" style="display:none;">
         <div class="threeDModle h-[100vh] w-[40%] absolute top-0 left-[30%] z-[9999999]">
             <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js" defer></script>
             <spline-viewer url="https://prod.spline.design/K3PMWOLITSNdEwR1/scene.splinecode"></spline-viewer> 
@@ -35,7 +36,7 @@
                 <div class="bar h-[2px] w-full bg-white rounded-full"></div>
             </div>
         </nav>
-        <div class="section1 relative h-[100vh] w-100% bg-[#FF8F00] flex justify-center items-center overflow-hidden">
+        <div class="section1 relative h-[100vh] w-100%  bg-transparent flex justify-center items-center overflow-hidden">
             <div class="iconSection1 absolute bottom-14 left-6 md:top-[17.5rem] md:left-11 h-32 w-12 flex flex-col justify-around z-[100] items-center">
                 <lord-icon class="cursor-scale small" src="https://cdn.lordicon.com/hrjifpbq.json" trigger="click" colors="primary:#ffffff" style="width:30px;height:30px"></lord-icon>
                 <lord-icon class="cursor-scale small" src="https://cdn.lordicon.com/fkdzyfle.json" trigger="click" colors="primary:#ffffff" style="width:30px;height:30px"></lord-icon>
@@ -57,7 +58,7 @@
                 <h1 class="cursor-scale  mainText2 text-3xl text-[#f3feb8cb] font-semibold md:text-[12rem] md:font-extralight font-['Della_Respira']">BERG</h1>
             </div>
         </div>
-        <div class="section2 h-[300vh] overflow-hidden bg-white z-[99999] relative">
+        <div class="section2 h-[100vh] w-full overflow-hidden bg-white relative">
             <div class="slideCont h-[100vh] flex ">
                 <div class="slide secondPage1 h-[100vh] w-[100%] flex flex-shrink-0 items-center justify-center">
                     <div class="h-[50%] w-full bg-[#FF8F00] ">
