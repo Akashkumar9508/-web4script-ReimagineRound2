@@ -1,3 +1,15 @@
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+    console.log(e)
+})
+
+function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
 // script.js
 window.addEventListener('load', function() {
     var loader = document.getElementById('loader');
@@ -6,7 +18,7 @@ window.addEventListener('load', function() {
         loader.style.display = 'none';
         content.style.display = 'block';
         initializeScrollTrigger();
-    }, 2000); 
+    }, 10000); 
 });
 
 // for responsive nav bar 
@@ -24,7 +36,7 @@ window.addEventListener("scroll",function(){
 })
 
 // gsap 
-function initializeScrollTrigger() {
+function initializeScrollTrigger(){
     const slideCont = document.querySelector(".slideCont");
     const section2 = document.querySelector(".section2");
 
@@ -58,56 +70,85 @@ function initializeScrollTrigger() {
       duration:2,
       ease: "back.out(1.7)",
     });
+    
     tl1.from(".mainText1",{
       x:-500,
       opacity:0,
       duration:1,
       ease:"power1.inout",
     },'mainText');
+
     tl1.from(".mainText2",{
       x:500,
       opacity:0,
       duration:1,
       ease:"power1.inout",
     },'mainText');
+
     tl1.from(".threeDModleRight",{
       x:700,
-      // rotate:"360deg",
-      duration:2,
-      ease: "expo.inOut",
-    },'bottle');
-    tl1.from(".threeDModleLeft",{
-      x:-700,
-      // rotate:"360deg",
       duration:2,
       ease: "back.out(1.7)",
     },'bottle');
+
+    tl1.from(".threeDModleLeft",{
+      x:-700,
+      duration:2,
+      ease: "back.out(1.7)",
+    },'bottle');
+
     tl1.from(nav,{
         y: -100,
         opacity:0,
-        duration: 1, // duration of 1 second
-        ease: "power1.inOut" // easing function for smooth animation
+        duration: 1,
+        ease: "power1.inOut"
       });
 
-      tl1.from(".iconSection1",{
+    tl1.from(".iconSection1",{
         x:-100,
         opacity:0,
         duration:1,
         ease: "circ.out",
-      },'icon');
-      tl1.from(".iconSection2",{
+    },'icon');
+
+    tl1.from(".iconSection2",{
         x:100,
         opacity:0,
         duration:1,
         ease: "circ.out",
-      },'icon');
+    },'icon');
+
       tl1.from(".exploreSection",{
         x:-100,
         opacity:0,
         duration:1,
         ease:"power1.inout",
-      },'icon');
-    };
+     },'icon');
+
+
+    //  3d model animation 
+    const threeD = gsap.timeline({scrollTrigger:{
+      trigger:".section2",
+      // markers:true,
+      start:"30% 50%",
+      end:"3% 50%",
+      scrub:true,
+     }});
+
+
+     threeD.to(".threeDModle",{
+      left:"-30%",
+     });
+
+
+     threeD.to(".threeDModle",{
+      top:"42%",
+      left:"30%",
+      scale:"1.3",
+      duration:"2",
+     });
+
+  };
 
 
 //cursor animation
@@ -145,4 +186,6 @@ var cursor =document.querySelector('.cursor'),
                 }
             });
          })
+
+
 
