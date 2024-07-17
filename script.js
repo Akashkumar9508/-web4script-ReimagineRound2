@@ -6,7 +6,7 @@ window.addEventListener('load', function() {
         loader.style.display = 'none';
         content.style.display = 'block';
         initializeScrollTrigger();
-    }, 2000); 
+    }, 200); 
 });
 function initializeScrollTrigger() {
     const slideCont = document.querySelector(".slideCont");
@@ -25,3 +25,13 @@ function initializeScrollTrigger() {
         }
     });
 }
+
+
+// 3d model animation 
+
+const threeDModle = document.querySelector(".3dModle");
+const section1= document.querySelector(".section1");
+const section2= document.querySelector(".section2");
+const section3= document.querySelector(".section3");
+
+
