@@ -18,7 +18,7 @@ window.addEventListener('load', function() {
         loader.style.display = 'none';
         content.style.display = 'block';
         initializeScrollTrigger();
-    }, 100); 
+    }, 10000); 
 });
 
 // for responsive nav bar 
