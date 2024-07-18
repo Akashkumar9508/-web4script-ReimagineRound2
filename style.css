@@ -92,9 +92,16 @@ body::-webkit-scrollbar {
 
 .slide1{
   background-image: url(./Assets/bacgroundImage.jpg);
+  background-position: center;
+  background-repeat:repeat-x;
+  background-size: contain;
+  filter: saturate(5);
 }
 .slide2{
-  background-image: url(./Assets/dj.png);
+  background-image: url(./Assets/dj.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* background-position: center; */
   
 }
@@ -125,3 +132,6 @@ body::-webkit-scrollbar {
   transform: scale(1.8);
 }
 
+.lift{
+  text-shadow: -4px 3px 2px rgba(154,85,20,0.75);
+}
