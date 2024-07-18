@@ -91,10 +91,10 @@ body::-webkit-scrollbar {
 }
 
 .slide1{
-  background-image: url(./Assets/dj.png);
+  background-image: url(./Assets/bacgroundImage.jpg);
 }
 .slide2{
-  background-image: url(./Assets/bacgroundImage.jpg);
+  background-image: url(./Assets/dj.png);
   /* background-position: center; */
   
 }
