@@ -90,9 +90,9 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.slide1{
+/* .slide1{
   background-image: url(./Assets/bacgroundImage.jpg);
-}
+} */
 .slide2{
   background-image: url(./Assets/dj.png);
   background-position: center;
@@ -123,4 +123,49 @@ body::-webkit-scrollbar {
 }
 .grow-small{
   transform: scale(1.8);
+}
+/* seection2pageanimationvideo */
+.cursor-circle {
+  position: absolute;
+  width: 400px; /* Updated to 400px */
+  height: 400px; /* Updated to 400px */
+  background-color: transparent;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+  /* border: 1px solid black; */
+  z-index: 50;
+  overflow: hidden;
+}
+.cursor-circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.divclass{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./Assets/bacgroundImage.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
 }

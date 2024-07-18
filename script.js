@@ -189,3 +189,10 @@ var cursor =document.querySelector('.cursor'),
 
 
 
+// section2pageanimationvideo
+document.addEventListener('mousemove', function(e) {
+  const circle = document.getElementById('cursor-circle');
+  circle.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+  const video = document.querySelector('video');
+  video.style.clipPath = `circle(250px at ${e.clientX}px ${e.clientY}px)`; // Updated to 200px radius
+});
