@@ -253,8 +253,16 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 
 
 // section2pageanimationvideo
-document.addEventListener('mousemove', function(e) {
-  const video = document.querySelector('.video');
-  video.style.clipPath = `circle(250px at ${e.clientX}px ${e.clientY}px)`; // Updated to 250px radius
-  video.style.webkitClipPath = `circle(250px at ${e.clientX}px ${e.clientY}px)`; // Webkit prefix for Safari
-});
+// Function to check if the device is a desktop
+function isDesktop() {
+  return window.innerWidth > 1024; // Adjust the width as needed for your breakpoint
+}
+
+if (isDesktop()) {
+  document.addEventListener('mousemove', function(e) {
+    const video = document.querySelector('.video');
+    video.style.clipPath = `circle(250px at ${e.clientX}px ${e.clientY}px)`; // Updated to 250px radius
+    video.style.webkitClipPath = `circle(250px at ${e.clientX}px ${e.clientY}px)`; // Webkit prefix for Safari
+  });
+}
+

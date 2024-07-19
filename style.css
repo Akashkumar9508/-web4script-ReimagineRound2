@@ -5,6 +5,7 @@
 :root {
   --border-width: 7px;
 }
+
 .cup{
   transform: translate(-50%, -50%);
   width: 150px;
@@ -74,6 +75,13 @@ body::-webkit-scrollbar {
   background-size: contain;
   filter: saturate(5);
 }
+
+@media (max-width: 1023px) {
+  .slide1 {
+    background-size: cover;
+  }
+}
+
 .slide2{
   background-image: url(./Assets/dj.jpg);
   background-position: center;
