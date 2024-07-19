@@ -18,7 +18,7 @@ window.addEventListener('load', function() {
         loader.style.display = 'none';
         content.style.display = 'block';
         initializeScrollTrigger();
-    }, 10000); 
+    },100); 
 });
 
 // for responsive nav bar 
@@ -41,7 +41,7 @@ function initializeScrollTrigger(){
     const section2 = document.querySelector(".section2");
 
     gsap.to(slideCont, {
-        transform: "translateX(-200%)",
+        transform: "translateX(-201%)",
         scrollTrigger: {
             trigger: section2,
             scroller: "body",
@@ -60,7 +60,6 @@ function initializeScrollTrigger(){
     const tl1 = gsap.timeline();
     tl1.from(".threeDModle",{
       y:600,
-      // rotate:"360deg",
       duration:2,
       ease: "elastic.out(1,0.3)",
     });
@@ -142,11 +141,65 @@ function initializeScrollTrigger(){
 
 
      threeD.to(".threeDModle",{
-      top:"42%",
-      left:"30%",
+      top:"37%",
+      left:"32%",
       scale:"1.3",
       duration:"2",
      });
+
+
+
+
+    //  section 3 animation 
+
+  const section3Animation = gsap.timeline({scrollTrigger:{
+    position:"fixed",
+    trigger:".section3",
+    start: "top 0%",
+    end: "top -300%",
+    scrub:true,
+    pin: true
+   }});
+
+   section3Animation.to(".textPart1",{
+     scale:1,
+     borderRadius:"0px",
+     duration:8,
+   });
+
+   section3Animation.to(".img1",{
+    width:"50%",
+    duration:8,
+   })
+
+   section3Animation.to(".section3part2",{
+      zIndex:"4",
+   });
+
+   section3Animation.to(".img2",{
+    width:"50%",
+    duration:8,
+   })
+   section3Animation.to(".textPart2",{
+    scale:1,
+    borderRadius:"0px",
+    duration:8,
+  });
+
+  section3Animation.to(".section3part3",{
+    zIndex:"5",
+ });
+ section3Animation.to(".textPart3",{
+  scale:1,
+  borderRadius:"0px",
+  duration:8,
+});
+ section3Animation.to(".img3",{
+  width:"50%",
+  duration:8,
+ })
+
+
 
   };
 
