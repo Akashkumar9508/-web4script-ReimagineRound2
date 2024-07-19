@@ -10,7 +10,7 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
-// script.js
+// loader animation
 window.addEventListener('load', function() {
     var loader = document.getElementById('loader');
     var content = document.getElementById('content');
@@ -18,7 +18,7 @@ window.addEventListener('load', function() {
         loader.style.display = 'none';
         content.style.display = 'block';
         initializeScrollTrigger();
-    },10000); 
+    },8000); 
 });
 
 // for responsive nav bar 
