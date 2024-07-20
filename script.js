@@ -18,7 +18,7 @@ window.addEventListener('load', function () {
     loader.style.display = 'none';
     content.style.display = 'block';
     initializeScrollTrigger();
-  }, 8000);
+  },8000);
 });
 
 // for responsive nav bar 
@@ -41,7 +41,7 @@ function initializeScrollTrigger() {
   const section2 = document.querySelector(".section2");
 
   gsap.to(slideCont, {
-    transform: "translateX(-201%)",
+    transform: "translateX(-200%)",
     scrollTrigger: {
       trigger: section2,
       scroller: "body",
@@ -143,7 +143,7 @@ function initializeScrollTrigger() {
 
 
   threeD.to(".threeDModle", {
-    top: "37%",
+    top: "33%",
     left: "32%",
     scale: "1.3",
     duration: "2",
@@ -260,7 +260,31 @@ function initializeScrollTrigger() {
   // Reapply animations on window resize
   window.addEventListener('resize', applyAnimations);
   
-
+  const triangleAnimation = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".secondPage3",
+      start: "200% 50%",
+      end: "250% 50%",
+      // markers:true,
+      scrub: true,
+    }
+  });
+  triangleAnimation.from(".traingle1",{
+    x:-500,
+    duration:8,
+  },'traingle')
+  triangleAnimation.from(".traingle2",{
+    x:500,
+    duration:8,
+  },'traingle')
+  triangleAnimation.from(".traingleTextLeft",{
+    x:-550,
+    duration:8,
+  },"traingleText")
+  triangleAnimation.from(".traingleTextRight",{
+    x:510,
+    duration:8,
+  },"traingleText")
 
 
 };
@@ -327,4 +351,6 @@ if (isDesktop()) {
     video.style.webkitClipPath = `circle(250px at ${e.clientX}px ${e.clientY}px)`; // Webkit prefix for Safari
   });
 }
+
+// triangle animation 
 
