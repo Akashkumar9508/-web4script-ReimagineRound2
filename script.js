@@ -18,7 +18,7 @@ window.addEventListener('load', function () {
     loader.style.display = 'none';
     content.style.display = 'block';
     initializeScrollTrigger();
-  },8000);
+  },200);
 });
 
 // for responsive nav bar 
@@ -310,6 +310,34 @@ function initializeScrollTrigger() {
     duration:2,
     left:100,
   })
+  buySection.from(".flavourText",{
+    opacity:0,
+    left:"-200px",
+    duration:2, 
+    // top:,
+  })
+
+
+
+
+const leftArrowBtn = document.querySelector(".leftArrow");
+const rightArrowBtn = document.querySelector(".rightArrow");
+const ffff1 = document.querySelector(".ffff1");
+const ffff2 = document.querySelector(".ffff2");
+rightArrowBtn.addEventListener("mouseenter",function(){
+    ffff2.classList.add("opacity1");
+    ffff2.classList.remove("opacity0");
+    ffff1.classList.add("opacity0");
+    ffff1.classList.remove("opacity1");
+})
+leftArrowBtn.addEventListener("mouseenter",function(){
+  ffff1.classList.add("opacity1");
+  ffff1.classList.remove("opacity0");
+  ffff2.classList.add("opacity0");
+  ffff2.classList.remove(" opacity1");
+})
+
+
 
 
 
@@ -317,6 +345,7 @@ function initializeScrollTrigger() {
 
 
 };
+
 
 
 //cursor animation
