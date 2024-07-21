@@ -18,7 +18,7 @@ window.addEventListener('load', function () {
     loader.style.display = 'none';
     content.style.display = 'block';
     initializeScrollTrigger();
-  },8000);
+  },200);
 });
 
 // for responsive nav bar 
@@ -143,7 +143,7 @@ function initializeScrollTrigger() {
 
 
   threeD.to(".threeDModle", {
-    top: "33%",
+    top: "29%",
     left: "32%",
     scale: "1.3",
     duration: "2",
@@ -285,6 +285,35 @@ function initializeScrollTrigger() {
     x:510,
     duration:8,
   },"traingleText")
+
+  const buySection = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".secondPage5",
+      start: "93.5% 50%",
+      end: "95% 50%",
+      markers:true,
+      scrub: true,
+    }
+  });
+
+  buySection.from(".f1",{
+    opacity:0,
+    duration:2,
+    left:-100,
+  })
+  buySection.from(".f2",{
+    opacity:0,
+    duration:2,
+  })
+  buySection.from(".f3",{
+    opacity:0,
+    duration:2,
+    left:100,
+  })
+
+
+
+
 
 
 };
