@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Coolberg</title>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script src="https://unpkg.com/lenis@1.1.4/dist/lenis.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,7 +21,7 @@
         <h1 class="cursor-scale small absolute text-white bottom-44 text-2xl font-['Rubik_Wet_Paint'] tracking-wide text-center">Hold tight, your Coolberg delight is on its way!</h1>
     </div>
     <div class="cursor md:flex hidden z-[9999999999]"></div>
-    <main id="content" class="overflow-hidden h-full w-full relative flex-col font-['Della_Respira'] bg-[#FF8F00]" style="display:none;">
+    <main id="content" class=" overflow-hidden h-full w-full relative flex-col font-['Della_Respira'] bg-[#FF8F00]" style="display:none;">
         <div class="threeDModle h-[100vh] w-[40%] absolute md:top-3 top-[-15px] left-[30%] z-[9999999]">
             <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.2/build/spline-viewer.js" defer></script>
             <spline-viewer url="https://prod.spline.design/K3PMWOLITSNdEwR1/scene.splinecode"></spline-viewer> 
@@ -142,26 +143,75 @@
                 <spline-viewer url="https://prod.spline.design/CminKYn2nINh-j-J/scene.splinecode"></spline-viewer>
             </div>
         </div>
-        <div class="section5 flex justify-around items-center h-[100vh] w-full ">
-            <div class="flavour relative f1 hover:bg-[#ffc3c3]  h-[80%] w-[23%] opacity-1 rounded-full bg-green-100 flex justify-center items-center">
-                <img class="imgMian" src="/Assets/Cranberry-removebg-preview (1).png" alt="">
-                <img class="absolute imgSecond" src="/Assets/bery-removebg-preview.png" alt="">
-                <button class="buyBtn absolute bottom-10 left-[30%] btn-81"><span>Buy now</span></button>
-            </div>
-            <div class="flavour relative f2 hover:bg-[#ede9b6] h-[80%] w-[23%] rounded-full bg-green-100 flex justify-center items-center">
-                <img class="imgMian" src="/Assets/Ginger-removebg-preview (1).png" alt="">
-                <img class="absolute imgSecond h-[45%] right-0" src="/Assets/Vodka_flavours-removebg-preview.png" alt="">
-                <button class="buyBtn absolute bottom-10 left-[30%] btn-81"><span>Buy now</span></button>
-            </div>
-            <div class="flavour relative f3 hover:bg-[#ffdcdc] h-[80%] w-[23%] rounded-full bg-green-100 flex justify-center items-center">
-                <img class="imgMian" src="/Assets/Strawberry-removebg-preview (1).png" alt="">
-                <img class="absolute imgSecond " src="/Assets/stobery-removebg-preview.png" alt="">
-                <button class="buyBtn  absolute bottom-10 left-[30%] btn-81"><span>Buy now</span></button>
-            </div>
+    </div>
+    <div class="section5 relative flex justify-between items-center h-[100vh] w-full" >
+        <div class="flavourText absolute -left-24 top-8 bg-white h-[9%] w-[23%] rotate-[-45deg] flex justify-center items-center text-3xl z-40 ">
+            <h1 class="">Flavours</h1>
+        </div>
+            <swiper-container class="h-[100vh] w-full">
+                <swiper-slide>
+                    <div class="ffff1 h-[100vh] w-full flex justify-around items-center absolute opacity1 top-0 left-0">
+                        <div class="flavour relative f1 hover:bg-[#ffc3c3]  h-[80%] w-[23%] opacity-1 rounded-full bg-green-100 flex justify-center items-center">
+                            <img class="imgMian" src="/Assets/Cranberry-removebg-preview (1).png" alt="">
+                            <img class="absolute imgSecond" src="/Assets/bery-removebg-preview.png" alt="">
+                            <button class="buyBtn absolute bottom-10 left-[30%] btn-81"><span>Buy now</span></button>
+                        </div>
+                        <div class="flavour relative f2 hover:bg-[#ede9b6] h-[80%] w-[23%] rounded-full bg-green-100 flex justify-center items-center">
+                            <img class="imgMian" src="/Assets/Ginger-removebg-preview (1).png" alt="">
+                            <img class="absolute imgSecond h-[45%] right-0" src="/Assets/Vodka_flavours-removebg-preview.png" alt="">
+                            <button class="buyBtn absolute bottom-10 left-[30%] btn-81"><span>Buy now</span></button>
+                        </div>
+                        <div class="flavour relative f3 hover:bg-[#ffdcdc] h-[80%] w-[23%] rounded-full bg-green-100 flex justify-center items-center">
+                            <img class="imgMian" src="/Assets/Strawberry-removebg-preview (1).png" alt="">
+                            <img class="absolute imgSecond " src="/Assets/stobery-removebg-preview.png" alt="">
+                            <button class="buyBtn  absolute bottom-10 left-[30%] btn-81"><span>Buy now</span></button>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="ffff2 h-[100vh] w-full flex justify-around items-center absolute opacity0 top-0 left-0">
+                        <div class="flavour flavour2 relative f2 hover:bg-[#ede9b6] h-[80%] w-[23%] rounded-full bg-green-100 flex justify-center items-center">
+                            <img class="imgMian" src="/Assets/Ginger-removebg-preview (1).png" alt="">
+                            <img class="absolute imgSecond h-[45%] right-0" src="/Assets/Vodka_flavours-removebg-preview.png" alt="">
+                            <button class="buyBtn absolute bottom-10 left-[30%] btn-81"><span>Buy now</span></button>
+                        </div>
+                        <div class="flavour flavour2 relative f1 hover:bg-[#ffc3c3]  h-[80%] w-[23%] opacity-1 rounded-full bg-green-100 flex justify-center items-center">
+                            <img class="imgMian" src="/Assets/Cranberry-removebg-preview (1).png" alt="">
+                            <img class="absolute imgSecond" src="/Assets/bery-removebg-preview.png" alt="">
+                            <button class="buyBtn absolute bottom-10 left-[30%] btn-81"><span>Buy now</span></button>
+                        </div>
+                        <div class="flavour flavour2 relative f3 hover:bg-[#ffdcdc] h-[80%] w-[23%] rounded-full bg-green-100 flex justify-center items-center">
+                            <img class="imgMian" src="/Assets/Strawberry-removebg-preview (1).png" alt="">
+                            <img class="absolute imgSecond " src="/Assets/stobery-removebg-preview.png" alt="">
+                            <button class="buyBtn  absolute bottom-10 left-[30%] btn-81"><span>Buy now</span></button>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="ffff2 h-[100vh] w-full flex justify-around items-center absolute opacity0 top-0 left-0">
+                        <div class="flavour flavour2 relative f2 hover:bg-[#ede9b6] h-[80%] w-[23%] rounded-full bg-green-100 flex justify-center items-center">
+                            <img class="imgMian" src="/Assets/Ginger-removebg-preview (1).png" alt="">
+                            <img class="absolute imgSecond h-[45%] right-0" src="/Assets/Vodka_flavours-removebg-preview.png" alt="">
+                            <button class="buyBtn absolute bottom-10 left-[30%] btn-81"><span>Buy now</span></button>
+                        </div>
+                        <div class="flavour flavour2 relative f1 hover:bg-[#ffc3c3]  h-[80%] w-[23%] opacity-1 rounded-full bg-green-100 flex justify-center items-center">
+                            <img class="imgMian" src="/Assets/Cranberry-removebg-preview (1).png" alt="">
+                            <img class="absolute imgSecond" src="/Assets/bery-removebg-preview.png" alt="">
+                            <button class="buyBtn absolute bottom-10 left-[30%] btn-81"><span>Buy now</span></button>
+                        </div>
+                        <div class="flavour flavour2 relative f3 hover:bg-[#ffdcdc] h-[80%] w-[23%] rounded-full bg-green-100 flex justify-center items-center">
+                            <img class="imgMian" src="/Assets/Strawberry-removebg-preview (1).png" alt="">
+                            <img class="absolute imgSecond " src="/Assets/stobery-removebg-preview.png" alt="">
+                            <button class="buyBtn  absolute bottom-10 left-[30%] btn-81"><span>Buy now</span></button>
+                        </div>
+                    </div>
+                </swiper-slide>
+              </swiper-container>
         </div>
         <footer></footer>
     </main>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
         AOS.init();
     </script>
