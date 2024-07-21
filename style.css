@@ -69,9 +69,11 @@ body::-webkit-scrollbar {
 }
 
 .slide1{
-  background-image: url(./Assets/backgroungImage.jpg);
+  background-image: url(./Assets/backgroundimage.png);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 @media (max-width: 1023px) {
