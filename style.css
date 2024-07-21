@@ -63,7 +63,7 @@ background: linear-gradient(0deg, rgba(251, 146, 60, 0.507) 17%, rgb(194, 190, 1
 }
 
 /* Hide scrollbars for the entire website */
- html::-webkit-scrollbar, 
+html::-webkit-scrollbar, 
 body::-webkit-scrollbar {
   display: none;
 }
@@ -141,11 +141,9 @@ body::-webkit-scrollbar {
   -webkit-tap-highlight-color: 
 transparent;
   -webkit-appearance: button;
-  background-color: 
-#ffffff;
+  background-color: #ffffff;
   background-image: none;
-  color: 
-#fff;
+  color: #fff;
   cursor: pointer;
   font-size: 80%;
   font-weight: 900;
