@@ -63,10 +63,10 @@ background: linear-gradient(0deg, rgba(251, 146, 60, 0.507) 17%, rgb(194, 190, 1
 }
 
 /* Hide scrollbars for the entire website */
-/* html::-webkit-scrollbar, 
+html::-webkit-scrollbar, 
 body::-webkit-scrollbar {
   display: none;
-}  */
+} 
 
 .slide1{
   background-image: url(./Assets/bacgroundImage.jpg);
