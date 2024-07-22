@@ -292,3 +292,14 @@ transparent;
   }
 }
 
+.mainNavlist{
+  /* display: none; */
+}
+
+.closeText{
+  transition: .1s ease-in-out;
+}
+.closeText:hover{
+  scale: 1.1;
+  color:red;
+}
