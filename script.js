@@ -318,34 +318,71 @@ function initializeScrollTrigger() {
   })
 
 
+  // navlist main code 
 
+  const menuBar = document.querySelector(".menubar");
+  const closeBar = document.querySelector(".closeText");
+  const navListMain = document.querySelector(".mainNavlist");
 
-const leftArrowBtn = document.querySelector(".leftArrow");
-const rightArrowBtn = document.querySelector(".rightArrow");
-const ffff1 = document.querySelector(".ffff1");
-const ffff2 = document.querySelector(".ffff2");
-rightArrowBtn.addEventListener("mouseenter",function(){
-    ffff2.classList.add("opacity1");
-    ffff2.classList.remove("opacity0");
-    ffff1.classList.add("opacity0");
-    ffff1.classList.remove("opacity1");
-})
-leftArrowBtn.addEventListener("mouseenter",function(){
-  ffff1.classList.add("opacity1");
-  ffff1.classList.remove("opacity0");
-  ffff2.classList.add("opacity0");
-  ffff2.classList.remove(" opacity1");
-})
+  menuBar.addEventListener("click",function(){
+    navListMain.style.display="block";
+    navListAnimation();
+  })
 
+  closeBar.addEventListener("click",function(){
+    navListMain.style.display="none";
+  })
+  
+  function navListAnimation(){
+    const navListTl = gsap.timeline({
+      scrub:2,
+      yoyo:true
+    });
+    navListTl.from(".list1",{
+      top:-100,
+      opacity:0,
+      ease: "power1.inOut",
+    });
+    navListTl.from(".list2",{
+      x:-100,
+      opacity:0,
+      ease: "power1.inOut",
+    });
+    navListTl.from(".list3",{
+      top:-100,
+      opacity:0,
+      ease: "power1.inOut",
+    });
+    navListTl.from(".list4",{
+      x:-100,
+      opacity:0,
+      ease: "power1.inOut",
+    });
+    navListTl.from(".list5",{
+      top:-100,
+      opacity:0,
+      ease: "power1.inOut",
+    });
+    navListTl.from(".list6",{
+      x:-100,
+      opacity:0,
+      ease: "power1.inOut",
+    });
+    navListTl.from(".navListRightContent",{
+      right:-300,
+      opacity:0,
+      ease: "power1.inOut",
 
+    })
+    navListTl.from(".socialMedia",{
+      right:-300,
+      opacity:0,
+      ease: "power1.inOut",
 
-
-
-
-
-
+    })
+  }
 };
-
+  
 
 
 //cursor animation
