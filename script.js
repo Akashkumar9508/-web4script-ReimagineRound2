@@ -18,7 +18,7 @@ window.addEventListener('load', function () {
     loader.style.display = 'none';
     content.style.display = 'block';
     initializeScrollTrigger();
-  },200);
+  },8000);
 });
 
 // for responsive nav bar 
@@ -443,7 +443,7 @@ if (isDesktop()) {
   document.addEventListener('mousemove', function (e) {
     const video = document.querySelector('.video');
     video.style.clipPath = `circle(250px at ${e.clientX}px ${e.clientY}px)`; // Updated to 250px radius
-    video.style.webkitClipPath = `circle(250px at ${e.clientX}px ${e.clientY}px)`; // Webkit prefix for Safari
+    video.style.webkitClipPath = `circle(300px at ${e.clientX}px ${e.clientY}px)`; // Webkit prefix for Safari
   });
 }
 

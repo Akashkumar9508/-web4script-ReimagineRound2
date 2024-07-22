@@ -143,7 +143,7 @@
             </div>
         </nav> 
         <div class="section1 relative h-[100vh] w-100%  bg-transparent flex justify-center items-center overflow-hidden">
-            <div class="absolute md:w-[36rem] md:h-14 h-20 w-full z-[999999999] bottom-0 right-0 bg-[#FF8F00]"></div>
+            <div class="absolute md:w-[36rem] lg:w-[585px] lg:rounded-tl-xl md:h-14 h-20 w-full z-[999999999] bottom-0 right-0 bg-[#FF8F00]"></div>
             <div class="iconSection1 absolute bottom-[5rem] left-6 md:left-11 h-32 w-12 flex flex-col justify-around z-[100] items-center ">
                 <lord-icon class="cursor-scale small" src="https://cdn.lordicon.com/hrjifpbq.json" trigger="click" colors="primary:#ffffff" style="width:30px;height:30px"></lord-icon>
                 <lord-icon class="cursor-scale small" src="https://cdn.lordicon.com/fkdzyfle.json" trigger="click" colors="primary:#ffffff" style="width:30px;height:30px"></lord-icon>
@@ -235,13 +235,25 @@
                 </div>
             </div>
         </div>
-        <div class="section4 w-full h-[100vh]">
-        <div class="w-full h-full">
-            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.1/build/spline-viewer.js" defer></script>
-            <spline-viewer url="https://prod.spline.design/CminKYn2nINh-j-J/scene.splinecode"></spline-viewer>
+        <div class="section4 w-full h-[100vh] flex items-center justify-center">
+            <div class="leftCan md:w-2/6 md:h-full md:flex hidden">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.2/build/spline-viewer.js" defer></script>
+                <spline-viewer url="https://prod.spline.design/NsbSeuaAhbW48JRg/scene.splinecode"></spline-viewer>
+            </div>
+            <div class="centerCan md:w-2/6 md:h-full md:flex hidden">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.2/build/spline-viewer.js" defer></script>
+                <spline-viewer url="https://prod.spline.design/CZsB2FkrttqeXU4i/scene.splinecode"></spline-viewer>
+            </div>
+            <div class="rightCan md:w-2/6 md:h-full md:flex hidden">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.2/build/spline-viewer.js" defer></script>
+                <spline-viewer url="https://prod.spline.design/ihMr8wlb6Tg1Yj-d/scene.splinecode"></spline-viewer>
+            </div>
+            <div class="mobileCan w-full h-full md:hidden flex">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.2/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/oiLBCV2zVWkoi-lF/scene.splinecode"></spline-viewer>
+            </div>
         </div>
-    </div>
-    <div class="section5 relative flex justify-between items-center h-[100vh] w-full" >
+        <div class="section5 relative flex justify-between items-center h-[100vh] w-full" >
         <div class="flavourText absolute -left-24 top-8 bg-white h-[9%] w-[23%] rotate-[-45deg] flex justify-center items-center text-3xl z-40 ">
             <h1 class="">Flavours</h1>
         </div>
@@ -303,7 +315,7 @@
                         </div>
                     </div>
                 </swiper-slide>
-              </swiper-container>
+            </swiper-container>
         </div>
         <footer></footer>
     </main>
