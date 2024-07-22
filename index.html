@@ -6,6 +6,7 @@
     <title>Coolberg</title>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script src="https://unpkg.com/lenis@1.1.4/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
@@ -20,23 +21,103 @@
         </div>
         <h1 class="cursor-scale small absolute text-white bottom-44 text-2xl font-['Rubik_Wet_Paint'] tracking-wide text-center">Hold tight, your Coolberg delight is on its way!</h1>
     </div>
-    <div class="cursor md:flex hidden z-[9999999999]"></div>
+    <div class="cursor md:flex hidden z-[999999999998]"></div>
     <main id="content" class=" overflow-hidden h-full w-full relative flex-col font-['Della_Respira'] bg-[#FF8F00]" style="display:none;">
         <div class="mainNavlist bg-[#000000e4] h-[100vh] w-full fixed top-0 left-0 z-[9999999999]">
-            <div class="close w-full h-[10%] flex  justify-between items-center px-10">
-                <div class="cursor-scale small logo h-[70px] w-[70px] -ml-2 md:-ml-2 grid items-center">
-                    <img  src="./Assets/coolberglogo-gif.gif" alt="">
+            <div class="close w-full h-[8%] flex  justify-between items-center px-10 fixed top-4">
+                <div class="cursor-scale small logo h-[70px] w-[70px] -ml-2 md:-ml-2 grid items-center text-white text-2xl ">
+                    <h1 >MENU</h1>
                 </div>
                 <lord-icon
                     class="closeText"
                     src="https://cdn.lordicon.com/zxvuvcnc.json"
                     trigger="hover"
                     colors="primary:#ffffff"
-                    style="width:50px;height:50px">
+                    style="width:40px;height:40px">
                 </lord-icon>
             </div>
-            <div class="navListMainSection bg-red-300 w-full h-[90%]">
-                
+            <div class="navListMainSection w-full h-[92%] flex">
+                <div class="navlistLeft h-full w-[60%] items-center">
+                    <div class="list1 h-[17%] w-full border-b-4 border-white flex justify-between items-center px-8 text-6xl text-white "></div> <!--isko mat hatana anant ye important hai-->
+                    <div class="list list2 h-[17%] w-full border-b-4 border-white flex justify-between items-center px-8 text-6xl hover:text-black text-white">HOME 
+                        <lord-icon
+                            class="arrows"
+                            src="https://cdn.lordicon.com/whtfgdfm.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            state="hover-ternd-flat-5"
+                            style="width:50px;height:50px">
+                        </lord-icon>
+                </div>
+                    <div class="list list3 h-[17%] w-full cursor-pointer border-b-4 border-white flex justify-between items-center px-8 text-6xl hover:text-black text-white">SHOP
+                        <lord-icon
+                            class="arrows"
+                            src="https://cdn.lordicon.com/whtfgdfm.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            state="hover-ternd-flat-5"
+                            style="width:50px;height:50px">
+                        </lord-icon>
+                    </div>
+                    <div class="list list4 h-[17%] w-full cursor-pointer border-b-4 border-white flex justify-between items-center px-8 text-6xl hover:text-black text-white">MERCHANDISE
+                        <lord-icon
+                            class="arrows"
+                            src="https://cdn.lordicon.com/whtfgdfm.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            state="hover-ternd-flat-5"
+                            style="width:50px;height:50px">
+                        </lord-icon>
+                    </div>
+                    <div class="list list5 h-[17%] w-full cursor-pointer border-b-4 border-white flex justify-between items-center px-8 text-6xl hover:text-black  text-white">CONTACT
+                        <lord-icon
+                            class="arrows"
+                            src="https://cdn.lordicon.com/whtfgdfm.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            state="hover-ternd-flat-5"
+                            style="width:50px;height:50px">
+                        </lord-icon>
+                    </div>
+                    <div class="list list6 h-[17%] w-full cursor-pointer border-b-4 border-white flex justify-between items-center px-8 text-6xl hover:text-black text-white">FLAVOURS
+                        <lord-icon
+                            class="arrows"
+                            src="https://cdn.lordicon.com/whtfgdfm.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            state="hover-ternd-flat-5"
+                            style="width:50px;height:50px">
+                        </lord-icon>
+                    </div>
+                </div>
+                <div class="navlistright h-full w-[40%]  flex flex-col justify-end">
+                    <div class="navListRightContent h-[63.5%] w-full bg-red-300"></div> <!--anant you have to paste the video here-->
+                    <div class="socialMedia h-[20%] w-ful relative">
+                        <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fab fa-instagram"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fab fa-linkedin"></i>
+                              </a>
+                              </li>
+                            <li>
+                              <a href="#">
+                                <i class="fab fa-facebook"></i>
+                              </a>
+                              
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fab fa-twitter"></i>
+                              </a> 
+                            </li>
+                          </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="threeDModle h-[100vh] w-[40%] absolute md:top-3 top-[-15px] left-[30%] z-[9999999]">

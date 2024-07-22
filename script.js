@@ -318,21 +318,71 @@ function initializeScrollTrigger() {
   })
 
 
-const menuBar = document.querySelector(".menubar");
-const closeBar = document.querySelector(".closeText");
-const navListMain = document.querySelector(".mainNavlist");
+  // navlist main code 
 
-menuBar.addEventListener("click",function(){
-  navListMain.style.display="block";
-})
+  const menuBar = document.querySelector(".menubar");
+  const closeBar = document.querySelector(".closeText");
+  const navListMain = document.querySelector(".mainNavlist");
 
-closeBar.addEventListener("click",function(){
-  navListMain.style.display="none";
-})
+  menuBar.addEventListener("click",function(){
+    navListMain.style.display="block";
+    navListAnimation();
+  })
 
+  closeBar.addEventListener("click",function(){
+    navListMain.style.display="none";
+  })
+  
+  function navListAnimation(){
+    const navListTl = gsap.timeline({
+      scrub:2,
+      yoyo:true
+    });
+    navListTl.from(".list1",{
+      top:-100,
+      opacity:0,
+      ease: "power1.inOut",
+    });
+    navListTl.from(".list2",{
+      x:-100,
+      opacity:0,
+      ease: "power1.inOut",
+    });
+    navListTl.from(".list3",{
+      top:-100,
+      opacity:0,
+      ease: "power1.inOut",
+    });
+    navListTl.from(".list4",{
+      x:-100,
+      opacity:0,
+      ease: "power1.inOut",
+    });
+    navListTl.from(".list5",{
+      top:-100,
+      opacity:0,
+      ease: "power1.inOut",
+    });
+    navListTl.from(".list6",{
+      x:-100,
+      opacity:0,
+      ease: "power1.inOut",
+    });
+    navListTl.from(".navListRightContent",{
+      right:-300,
+      opacity:0,
+      ease: "power1.inOut",
 
+    })
+    navListTl.from(".socialMedia",{
+      right:-300,
+      opacity:0,
+      ease: "power1.inOut",
+
+    })
+  }
 };
-
+  
 
 
 //cursor animation
