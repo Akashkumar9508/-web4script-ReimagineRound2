@@ -1,3 +1,8 @@
+// Function to check if the device is a desktop
+function isDesktop() {
+  return window.innerWidth > 1024; // Adjust the width as needed for your breakpoint
+}
+
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
@@ -286,6 +291,8 @@ function initializeScrollTrigger() {
     duration:8,
   },"traingleText")
 
+  //section5 animation
+
   const buySection = gsap.timeline({
     scrollTrigger: {
       trigger: ".secondPage5",
@@ -316,8 +323,7 @@ function initializeScrollTrigger() {
     duration:2, 
     // top:,
   })
-
-
+//section5animation ended
 
 
 const leftArrowBtn = document.querySelector(".leftArrow");
@@ -397,10 +403,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 
 
 // section2pageanimationvideo
-// Function to check if the device is a desktop
-function isDesktop() {
-  return window.innerWidth > 1024; // Adjust the width as needed for your breakpoint
-}
+
 
 if (isDesktop()) {
   document.addEventListener('mousemove', function (e) {
