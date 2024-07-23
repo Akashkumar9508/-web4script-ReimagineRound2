@@ -23,8 +23,7 @@ window.addEventListener('load', function () {
     loader.style.display = 'none';
     content.style.display = 'block';
     initializeScrollTrigger();
-  },80);
-  },200);
+  },8000);
 });
 
 // for responsive nav bar 
@@ -304,26 +303,26 @@ function initializeScrollTrigger() {
     }
   });
 
-  // buySection.from(".f1",{
-  //   opacity:0,
-  //   duration:2,
-  //   left:-100,
-  // })
-  // buySection.from(".f2",{
-  //   opacity:0,
-  //   duration:2,
-  // })
-  // buySection.from(".f3",{
-  //   opacity:0,
-  //   duration:2,
-  //   left:100,
-  // })
-  // buySection.from(".flavourText",{
-  //   opacity:0,
-  //   left:"-200px",
-  //   duration:2, 
-  //   // top:,
-  // })
+  buySection.from(".f1",{
+    opacity:0,
+    duration:2,
+    left:-100,
+  })
+  buySection.from(".f2",{
+    opacity:0,
+    duration:2,
+  })
+  buySection.from(".f3",{
+    opacity:0,
+    duration:2,
+    left:100,
+  })
+  buySection.from(".flavourText",{
+    opacity:0,
+    left:"-200px",
+    duration:2, 
+    // top:,
+  })
 //section5animation ended
   // navlist main code 
 
