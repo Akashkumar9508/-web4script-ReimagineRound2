@@ -107,13 +107,35 @@ body::-webkit-scrollbar {
   transform-origin: center center;
   z-index: 99999;
 }
+.nav_cursor{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  border: 2px solid #16a085;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform .3s ease;
+  transform-origin: center center;
+  z-index: 99999;
+}
 .grow, .grow-small{
   transform: scale(4.2);
   mix-blend-mode: difference;
   background-color: rgb(38, 236, 143);
   border: none;
 }
+.nav_grow, .nav_grow-small{
+  transform: scale(4.2);
+  mix-blend-mode: difference;
+  background-color: rgb(230, 21, 21);
+  border: none;
+}
 .grow-small{
+  transform: scale(1.8);
+}
+.nav_grow-small{
   transform: scale(1.8);
 }
 
