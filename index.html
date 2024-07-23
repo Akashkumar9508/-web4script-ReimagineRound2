@@ -86,7 +86,7 @@
                 <div class="bar h-[2px] w-full bg-white rounded-full"></div>
             </div>
         </nav> 
-        <div class="section1 relative h-[100vh] w-100%  bg-transparent flex justify-center items-center overflow-hidden">
+        <div id="section1" class="section1 relative h-[100vh] w-100%  bg-transparent flex justify-center items-center overflow-hidden">
             <div class="absolute md:w-[36rem] lg:w-[620px] lg:rounded-tl-xl md:h-14 h-20 w-full z-[999999999] bottom-0 right-0 bg-[#17153B]"></div>
             <div class="iconSection1 absolute bottom-[5rem] left-6 md:left-11 h-32 w-12 flex flex-col justify-around z-[100] items-center ">
                 <lord-icon class="cursor-scale small" src="https://cdn.lordicon.com/hrjifpbq.json" trigger="click" colors="primary:#ffffff" style="width:30px;height:30px"></lord-icon>
@@ -113,7 +113,7 @@
                 </div>
             </div>
         </div>
-        <div  id="section2" class="section2 h-[100vh] w-full overflow-hidden relative font-['Della_Respira']">
+        <div id="section2" class="section2 h-[100vh] w-full overflow-hidden relative font-['Della_Respira']">
             <div class="slideCont h-[100vh] flex ">
 
                 <div class="slide1 secondPage1 h-[100vh] w-[100%] flex flex-shrink-0 items-center justify-center relative flex-col gap-2">
@@ -144,7 +144,7 @@
                 </div>
             </div>
         </div>
-        <div class="section3 h-[735px] w-ful relative z-[99999999]">
+        <div id="section3" class="section3 h-[735px] w-ful relative z-[99999999]">
             <div class="section3part1 border-t-4 border-white h-screen w-full bg-[#2E236C] flex absolute top-0 left-0 z-[3] flex-col md:flex-row">
                 <div class="textPart1 scale-0 relative text-[#b642f0] bg-[#EEEEEE]  md:h-full h-[50%] md:w-[50%] w-full flex flex-col justify-center items-center border-4 border-white md:rounded-[90px] border-spacing-2 gap-5 rounded-[100px]">
                     <div class=" md:h-[50%] flex flex-col gap-5 md:gap-10 w-[80%] ">
@@ -179,7 +179,7 @@
                 </div>
             </div>
         </div>
-        <div class="section4 w-full h-[100vh] flex items-center justify-center md:z-0 z-[99] relative md:mt-10">
+        <div id="section4" class="section4 w-full h-[100vh] flex items-center justify-center md:z-0 z-[99] relative md:mt-10">
             <div class="absolute w-full h-[20%] bg-red-800 top-5 flex items-center justify-center">
                 <h1 class="md:text-[9rem] text-[40px]">POP > SIP > COOL</h1>
             </div>
@@ -206,7 +206,8 @@
                 <spline-viewer url="https://prod.spline.design/oiLBCV2zVWkoi-lF/scene.splinecode"></spline-viewer>
             </div>
         </div> 
-        <div class="section5 relative flex justify-between items-center h-[100vh] w-full " >
+        <div id="section5" class="section5 relative flex justify-between items-center h-[100vh] w-full " >
+            <h1 class="text-[1.3rem] absolute bottom-4 right-3 text-white ">swipe next >></h1>
         <div class="flavourText absolute md:-left-24 md:top-8 left-[-70px] top-[25px] bg-white md:h-[9%] h-12 md:w-[23%] w-[60%] rotate-[-45deg] flex justify-center items-center text-3xl z-40 ">
             <h1 class="">Flavours</h1>
         </div>
@@ -214,102 +215,102 @@
                 <swiper-slide>
                     <div class="ffff1 h-[100vh] w-full flex md:justify-around items-center absolute opacity1 top-0 left-0 flex-col md:flex-row justify-evenly">
                         <div class="flavour relative f1 hover:bg-[#ffc3c3]  md:h-[80%] md:w-[23%] w-[90%] h-[20%] opacity-1 md:rounded-full rounded-[55px] bg-green-100 flex md:justify-center items-center justify-end overflow-hidden">
-                            <div class="md:hidden flex w-[85%] h-full p-4 flex-col z-[40]">
-                                <h1 class=" text-[15px] font-bold">CRANBERRY <br> NON-ALCOHOLIC BEER</h1>
-                                <p>shelf life - 12 Months</p>
+                            <div class="md:absolute md:bottom-12 flex w-[85%] h-full md:text-center  md:h-20 p-4 flex-col z-[40]">
+                                <h1 class=" text-[15px] font-bold">CRANBERRY <br> <span class="md:hidden"> NON-ALCOHOLIC BEER</span></h1>
+                                <p class="md:hidden">shelf life - 12 Months</p>
                                 <p>RS. 534</p>
                             </div>
-                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12" src="/Assets/Cranberry-removebg-preview (1).png" alt="">
+                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12 md:-translate-y-6" src="/Assets/Cranberry-removebg-preview (1).png" alt="">
                             <img class="absolute imgSecond" src="/Assets/bery-removebg-preview.png" alt="">
-                            <button class="buyBtn absolute md:bottom-10 md:left-[30%] btn-81 z-[40] left-4 bottom-4 px-4 py-2"><span>Buy now</span></button>
+                            <button class="buyBtn absolute md:bottom-6 md:left-[35%] btn-81 z-[40] left-4 bottom-4 px-4 py-2"><span>Buy now</span></button>
                         </div>
                         <div class="flavour relative f2 hover:bg-[#ede9b6] md:h-[80%] md:w-[23%] w-[90%] h-[20%] md:rounded-full rounded-[55px] bg-green-100 flex md:justify-center items-center justify-end overflow-hidden">
-                            <div class="md:hidden flex w-[85%] h-full p-4 flex-col z-[40]">
-                                <h1 class=" text-[15px] font-bold">GINGER-BEER <br> NON-ALCOHOLIC BEER</h1>
-                                <p>shelf life - 12 Months</p>
+                            <div class="md:absolute md:bottom-12 flex w-[85%] h-full md:h-20 md:text-center p-4 flex-col z-[40]">
+                                <h1 class=" text-[15px] font-bold">GINGER-BEER <br> <span class="md:hidden">NON-ALCOHOLIC BEER</span></h1>
+                                <p class="md:hidden">shelf life - 12 Months</p>
                                 <p>RS. 534</p>
                             </div>
-                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12" src="/Assets/Ginger-removebg-preview (1).png" alt="">
+                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12 md:-translate-y-6" src="/Assets/Ginger-removebg-preview (1).png" alt="">
                             <img class="absolute imgSecond h-[45%] right-0" src="/Assets/Vodka_flavours-removebg-preview.png" alt="">
-                            <button class="buyBtn absolute md:bottom-10 md:left-[30%] btn-81 z-[40] left-4 bottom-4 px-4 py-2"><span>Buy now</span></button>
+                            <button class="buyBtn absolute md:bottom-6 md:left-[35%] btn-81 z-[40] left-4 -bottom-24 px-4 py-2"><span>Buy now</span></button>
                         </div>
                         <div class="flavour relative f3 hover:bg-[#ffdcdc] md:h-[80%] md:w-[23%] w-[90%] h-[20%] md:rounded-full rounded-[55px] bg-green-100 flex md:justify-center items-center justify-end overflow-hidden">
-                            <div class="md:hidden flex w-[85%] h-full p-4 flex-col z-[40]">
-                                <h1 class=" text-[15px] font-bold"> STRAWBERRY <br> NON-ALCOHOLIC BEER</h1>
-                                <p>shelf life - 12 Months</p>
+                            <div class="md:absolute md:h-20 md:text-center md:bottom-12 flex w-[85%] h-full p-4 flex-col z-[40]">
+                                <h1 class=" text-[15px] font-bold"> STRAWBERRY <br><span class="md:hidden">NON-ALCOHOLIC BEER</span> </h1>
+                                <p class="md:hidden">shelf life - 12 Months</p>
                                 <p>RS. 534</p>
                             </div>
-                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12" src="/Assets/Strawberry-removebg-preview (1).png" alt="">
+                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12 md:-translate-y-6" src="/Assets/Strawberry-removebg-preview (1).png" alt="">
                             <img class="absolute imgSecond " src="/Assets/stobery-removebg-preview.png" alt="">
-                            <button class="buyBtn  absolute md:bottom-10 md:left-[30%] btn-81 z-[40] left-4 bottom-4 px-4 py-2"><span>Buy now</span></button>
+                            <button class="buyBtn  absolute md:bottom-6 md:left-[35%] btn-81 z-[40] left-4 bottom-4 px-4 py-2"><span>Buy now</span></button>
                         </div>
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="ffff1 h-[100vh] w-full flex md:justify-around items-center absolute opacity1 top-0 left-0 flex-col md:flex-row justify-evenly">
                         <div class="flavour relative f1 hover:bg-[#ffc3c3]  md:h-[80%] md:w-[23%] w-[90%] h-[20%] opacity-1 md:rounded-full rounded-[55px] bg-green-100 flex md:justify-center items-center justify-end overflow-hidden">
-                            <div class="md:hidden flex w-[85%] h-full p-4 flex-col z-[40]">
-                                <h1 class=" text-[15px] font-bold">CRANBERRY <br> NON-ALCOHOLIC BEER</h1>
-                                <p>shelf life - 12 Months</p>
+                            <div class="md:absolute md:bottom-12 flex w-[85%] h-full md:text-center  md:h-20 p-4 flex-col z-[40]">
+                                <h1 class=" text-[15px] font-bold">CRANBERRY <br> <span class="md:hidden"> NON-ALCOHOLIC BEER</span></h1>
+                                <p class="md:hidden">shelf life - 12 Months</p>
                                 <p>RS. 534</p>
                             </div>
-                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12" src="/Assets/Cranberry-removebg-preview (1).png" alt="">
+                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12 md:-translate-y-6" src="/Assets/Cranberry-removebg-preview (1).png" alt="">
                             <img class="absolute imgSecond" src="/Assets/bery-removebg-preview.png" alt="">
-                            <button class="buyBtn absolute md:bottom-10 md:left-[30%] btn-81 z-[40] left-4 bottom-4 px-4 py-2"><span>Buy now</span></button>
+                            <button class="buyBtn absolute md:bottom-6 md:left-[35%] btn-81 z-[40] left-4 bottom-4 px-4 py-2"><span>Buy now</span></button>
                         </div>
                         <div class="flavour relative f2 hover:bg-[#ede9b6] md:h-[80%] md:w-[23%] w-[90%] h-[20%] md:rounded-full rounded-[55px] bg-green-100 flex md:justify-center items-center justify-end overflow-hidden">
-                            <div class="md:hidden flex w-[85%] h-full p-4 flex-col z-[40]">
-                                <h1 class=" text-[15px] font-bold">GINGER-BEER <br> NON-ALCOHOLIC BEER</h1>
-                                <p>shelf life - 12 Months</p>
+                            <div class="md:absolute md:bottom-12 flex w-[85%] h-full md:h-20 md:text-center p-4 flex-col z-[40]">
+                                <h1 class=" text-[15px] font-bold">GINGER-BEER <br> <span class="md:hidden">NON-ALCOHOLIC BEER</span></h1>
+                                <p class="md:hidden">shelf life - 12 Months</p>
                                 <p>RS. 534</p>
                             </div>
-                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12" src="/Assets/Ginger-removebg-preview (1).png" alt="">
+                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12 md:-translate-y-6" src="/Assets/Ginger-removebg-preview (1).png" alt="">
                             <img class="absolute imgSecond h-[45%] right-0" src="/Assets/Vodka_flavours-removebg-preview.png" alt="">
-                            <button class="buyBtn absolute md:bottom-10 md:left-[30%] btn-81 z-[40] left-4 bottom-4 px-4 py-2"><span>Buy now</span></button>
+                            <button class="buyBtn absolute md:bottom-6 md:left-[35%] btn-81 z-[40] left-4 -bottom-24 px-4 py-2"><span>Buy now</span></button>
                         </div>
                         <div class="flavour relative f3 hover:bg-[#ffdcdc] md:h-[80%] md:w-[23%] w-[90%] h-[20%] md:rounded-full rounded-[55px] bg-green-100 flex md:justify-center items-center justify-end overflow-hidden">
-                            <div class="md:hidden flex w-[85%] h-full p-4 flex-col z-[40]">
-                                <h1 class=" text-[15px] font-bold"> STRAWBERRY <br> NON-ALCOHOLIC BEER</h1>
-                                <p>shelf life - 12 Months</p>
+                            <div class="md:absolute md:h-20 md:text-center md:bottom-12 flex w-[85%] h-full p-4 flex-col z-[40]">
+                                <h1 class=" text-[15px] font-bold"> STRAWBERRY <br><span class="md:hidden">NON-ALCOHOLIC BEER</span> </h1>
+                                <p class="md:hidden">shelf life - 12 Months</p>
                                 <p>RS. 534</p>
                             </div>
-                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12" src="/Assets/Strawberry-removebg-preview (1).png" alt="">
+                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12 md:-translate-y-6" src="/Assets/Strawberry-removebg-preview (1).png" alt="">
                             <img class="absolute imgSecond " src="/Assets/stobery-removebg-preview.png" alt="">
-                            <button class="buyBtn  absolute md:bottom-10 md:left-[30%] btn-81 z-[40] left-4 bottom-4 px-4 py-2"><span>Buy now</span></button>
+                            <button class="buyBtn  absolute md:bottom-6 md:left-[35%] btn-81 z-[40] left-4 bottom-4 px-4 py-2"><span>Buy now</span></button>
                         </div>
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="ffff1 h-[100vh] w-full flex md:justify-around items-center absolute opacity1 top-0 left-0 flex-col md:flex-row justify-evenly">
                         <div class="flavour relative f1 hover:bg-[#ffc3c3]  md:h-[80%] md:w-[23%] w-[90%] h-[20%] opacity-1 md:rounded-full rounded-[55px] bg-green-100 flex md:justify-center items-center justify-end overflow-hidden">
-                            <div class="md:hidden flex w-[85%] h-full p-4 flex-col z-[40]">
-                                <h1 class=" text-[15px] font-bold">CRANBERRY <br> NON-ALCOHOLIC BEER</h1>
-                                <p>shelf life - 12 Months</p>
+                            <div class="md:absolute md:bottom-12 flex w-[85%] h-full md:text-center  md:h-20 p-4 flex-col z-[40]">
+                                <h1 class=" text-[15px] font-bold">CRANBERRY <br> <span class="md:hidden"> NON-ALCOHOLIC BEER</span></h1>
+                                <p class="md:hidden">shelf life - 12 Months</p>
                                 <p>RS. 534</p>
                             </div>
-                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12" src="/Assets/Cranberry-removebg-preview (1).png" alt="">
+                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12 md:-translate-y-6" src="/Assets/Cranberry-removebg-preview (1).png" alt="">
                             <img class="absolute imgSecond" src="/Assets/bery-removebg-preview.png" alt="">
-                            <button class="buyBtn absolute md:bottom-10 md:left-[30%] btn-81 z-[40] left-4 bottom-4 px-4 py-2"><span>Buy now</span></button>
+                            <button class="buyBtn absolute md:bottom-6 md:left-[35%] btn-81 z-[40] left-4 bottom-4 px-4 py-2"><span>Buy now</span></button>
                         </div>
                         <div class="flavour relative f2 hover:bg-[#ede9b6] md:h-[80%] md:w-[23%] w-[90%] h-[20%] md:rounded-full rounded-[55px] bg-green-100 flex md:justify-center items-center justify-end overflow-hidden">
-                            <div class="md:hidden flex w-[85%] h-full p-4 flex-col z-[40]">
-                                <h1 class=" text-[15px] font-bold">GINGER-BEER <br> NON-ALCOHOLIC BEER</h1>
-                                <p>shelf life - 12 Months</p>
+                            <div class="md:absolute md:bottom-12 flex w-[85%] h-full md:h-20 md:text-center p-4 flex-col z-[40]">
+                                <h1 class=" text-[15px] font-bold">GINGER-BEER <br> <span class="md:hidden">NON-ALCOHOLIC BEER</span></h1>
+                                <p class="md:hidden">shelf life - 12 Months</p>
                                 <p>RS. 534</p>
                             </div>
-                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12" src="/Assets/Ginger-removebg-preview (1).png" alt="">
+                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12 md:-translate-y-6" src="/Assets/Ginger-removebg-preview (1).png" alt="">
                             <img class="absolute imgSecond h-[45%] right-0" src="/Assets/Vodka_flavours-removebg-preview.png" alt="">
-                            <button class="buyBtn absolute md:bottom-10 md:left-[30%] btn-81 z-[40] left-4 bottom-4 px-4 py-2"><span>Buy now</span></button>
+                            <button class="buyBtn absolute md:bottom-6 md:left-[35%] btn-81 z-[40] left-4 -bottom-24 px-4 py-2"><span>Buy now</span></button>
                         </div>
                         <div class="flavour relative f3 hover:bg-[#ffdcdc] md:h-[80%] md:w-[23%] w-[90%] h-[20%] md:rounded-full rounded-[55px] bg-green-100 flex md:justify-center items-center justify-end overflow-hidden">
-                            <div class="md:hidden flex w-[85%] h-full p-4 flex-col z-[40]">
-                                <h1 class=" text-[15px] font-bold"> STRAWBERRY <br> NON-ALCOHOLIC BEER</h1>
-                                <p>shelf life - 12 Months</p>
+                            <div class="md:absolute md:h-20 md:text-center md:bottom-12 flex w-[85%] h-full p-4 flex-col z-[40]">
+                                <h1 class=" text-[15px] font-bold"> STRAWBERRY <br><span class="md:hidden">NON-ALCOHOLIC BEER</span> </h1>
+                                <p class="md:hidden">shelf life - 12 Months</p>
                                 <p>RS. 534</p>
                             </div>
-                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12" src="/Assets/Strawberry-removebg-preview (1).png" alt="">
+                            <img class="imgMian md:w-[30%] md:h-[60%] h-[90%] md:-translate-x-0 -translate-x-12 md:-translate-y-6" src="/Assets/Strawberry-removebg-preview (1).png" alt="">
                             <img class="absolute imgSecond " src="/Assets/stobery-removebg-preview.png" alt="">
-                            <button class="buyBtn  absolute md:bottom-10 md:left-[30%] btn-81 z-[40] left-4 bottom-4 px-4 py-2"><span>Buy now</span></button>
+                            <button class="buyBtn  absolute md:bottom-6 md:left-[35%] btn-81 z-[40] left-4 bottom-4 px-4 py-2"><span>Buy now</span></button>
                         </div>
                     </div>
                 </swiper-slide>
