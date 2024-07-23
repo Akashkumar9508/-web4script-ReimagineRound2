@@ -22,6 +22,9 @@
   /* background-size: contain;
   background-position: center; */
 }
+.sha{
+background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 18%, rgba(240,82,3,1) 23%, rgba(191,67,5,1) 32%, rgba(156,56,7,1) 33%, rgba(128,48,8,1) 40%, rgba(114,44,9,1) 41%, rgba(15,14,14,1) 73%);}
 .cup::before{
   content: "";
   position: absolute;
