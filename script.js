@@ -6,7 +6,7 @@ function isDesktop() {
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
-  console.log(e)
+  // console.log(e)
 })
 
 function raf(time) {
@@ -344,6 +344,11 @@ function initializeScrollTrigger() {
       scrub:2,
       yoyo:true
     });
+    navListTl.from(".mainNavlist",{
+      x:"50%",
+      opacity:0,
+      ease:"power1.inOut",
+    })
     navListTl.from(".list1",{
       top:-100,
       opacity:0,
