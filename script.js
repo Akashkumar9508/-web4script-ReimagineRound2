@@ -23,7 +23,7 @@ window.addEventListener('load', function () {
     loader.style.display = 'none';
     content.style.display = 'block';
     initializeScrollTrigger();
-  },8000);
+  },200);
 });
 
 // for responsive nav bar 
@@ -296,9 +296,9 @@ function initializeScrollTrigger() {
   const buySection = gsap.timeline({
     scrollTrigger: {
       trigger: ".secondPage5",
-      start: "93.5% 50%",
-      end: "95% 50%",
-      // markers:true,
+      start: "86.5% 50%",
+      end: "87.5% 50%",
+      markers:true,
       scrub: true,
     }
   });
