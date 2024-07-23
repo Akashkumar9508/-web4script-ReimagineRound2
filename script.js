@@ -23,7 +23,7 @@ window.addEventListener('load', function () {
     loader.style.display = 'none';
     content.style.display = 'block';
     initializeScrollTrigger();
-  },20);
+  },8000);
 });
 
 // for responsive nav bar 
@@ -401,6 +401,8 @@ function initializeScrollTrigger() {
 function initializeCursorEffects() {
   var cursor = document.querySelector('.cursor'),
     cursorScale = document.querySelectorAll('.cursor-scale'),
+    sectioMain = document.querySelector('.sectionmain'),
+    navListMainSection = document.querySelector('.navListMainSection'),  
     mouseX = 0,
     mouseY = 0;
 
@@ -410,7 +412,7 @@ function initializeCursorEffects() {
       gsap.set(cursor, {
         css: {
           left: mouseX,
-          top: mouseY
+          top: mouseY,
         }
       });
     }
@@ -457,3 +459,42 @@ if (isDesktop()) {
 
 // triangle animation 
 
+//navlist custom cursor
+function initializeNavCursorEffects() {
+  var cursor = document.querySelector('.nav_cursor'),
+    cursorScale = document.querySelectorAll('.cursor-scale'),
+    mouseX = 0,
+    mouseY = 0;
+
+  gsap.to({}, 0.016, {
+    repeat: -1,
+    onRepeat: function () {
+      gsap.set(cursor, {
+        css: {
+          left: mouseX,
+          top: mouseY,
+        }
+      });
+    }
+  });
+  window.addEventListener("mousemove", function (e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+  cursorScale.forEach(link => {
+    link.addEventListener('mouseleave', () => {
+      cursor.classList.remove('nav_grow');
+      cursor.classList.remove('nav_grow-small');
+    });
+    link.addEventListener('mousemove', () => {
+      cursor.classList.add('nav_grow');
+      if (link.classList.contains('small')) {
+        cursor.classList.remove('nav_grow');
+        cursor.classList.add('nav_grow-small');
+      }
+    });
+  });
+}
+if (window.matchMedia("(min-width: 768px)").matches) {
+  initializeNavCursorEffects();
+}
