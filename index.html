@@ -189,23 +189,24 @@
             <div class="absolute w-full h-[20%] bg-red-800 md:-translate-y-0 -translate-y-10 flex items-center justify-center">
                 <h1 class="md:text-[9rem] text-[40px] ">POP > SIP > COOL</h1>
             </div>
-            <div class="absolute w-full h-[20%] bg-red-800 md:bottom-5 bottom-20 flex items-center justify-center overflow-hidden">
-                <div class=" absolute bottom-0 w-full h-10 z-[99] bg-red-800"></div>
-                <h1 class="md:text-[9rem] z-[99] text-[40px]">POP > SIP > COOL</h1>
+            <div class="absolute w-full h-[20%] bg-red-800 md:bottom-5 bottom-20 flex items-center justify-around overflow-hidden z-[999]">
+                <div class="md:w-[20%] h-full bg-blue-800 md:flex hidden"></div>
+                <div class="md:w-[20%] w-full h-full bg-green-800"></div>
+                <div class="md:w-[20%] h-full bg-yellow-800 md:flex hidden"></div>
             </div>
-            <div class="leftCan md:w-2/6 md:h-full md:flex hidden flex-col overflow-hidden">
-                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.2/build/spline-viewer.js" defer></script>
+            <div class="leftCan md:w-2/6 md:h-full md:flex hidden flex-col overflow-hidden md:-translate-y-[5rem]">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.3/build/spline-viewer.js" defer></script>
                 <spline-viewer url="https://prod.spline.design/NsbSeuaAhbW48JRg/scene.splinecode"></spline-viewer>
             </div>
-            <div class="centerCan md:w-2/6 md:h-full md:flex hidden">
+            <div class="centerCan md:w-2/6 md:h-full md:flex hidden md:-translate-y-[5rem]">
                 <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.2/build/spline-viewer.js" defer></script>
                 <spline-viewer url="https://prod.spline.design/CZsB2FkrttqeXU4i/scene.splinecode"></spline-viewer>
             </div>
-            <div class="rightCan md:w-2/6 md:h-full md:flex hidden">
+            <div class="rightCan md:w-2/6 md:h-full md:flex hidden md:-translate-y-[5rem]">
                 <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.2/build/spline-viewer.js" defer></script>
                 <spline-viewer url="https://prod.spline.design/ihMr8wlb6Tg1Yj-d/scene.splinecode"></spline-viewer>
             </div>
-            <div class="mobileCan w-full h-full md:hidden flex">
+            <div class="mobileCan w-full h-full md:hidden flex -translate-y-36">
                 <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.2/build/spline-viewer.js"></script>
                 <spline-viewer url="https://prod.spline.design/oiLBCV2zVWkoi-lF/scene.splinecode"></spline-viewer>
             </div>
@@ -379,7 +380,7 @@
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-up" class="footerBottom h-[10%] w-[100%]  z-20 flex justify-between items-center bg-blue-600 px-7">
+            <div class="footerBottom h-[10%] w-[100%]  z-20 flex justify-between items-center bg-blue-600 px-7">
                 <h2 class="cursor-scale small md:text-base text-[9px]">Copyright © 2021 Coolberg Beverages Pvt. Ltd.</h2>
                 <div class="w-[10%] h-full flex items-center justify-end gap-5">
                     <i class='cursor-scale small bx bxl-facebook-circle text-[30px]' style='color:#ffffff'></i>
