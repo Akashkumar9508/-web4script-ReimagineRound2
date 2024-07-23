@@ -23,7 +23,7 @@ window.addEventListener('load', function () {
     loader.style.display = 'none';
     content.style.display = 'block';
     initializeScrollTrigger();
-  },8000);
+  },20);
 });
 
 // for responsive nav bar 
@@ -148,7 +148,7 @@ function initializeScrollTrigger() {
 
 
   threeD.to(".threeDModle", {
-    top: "29%",
+    top: "32%",
     left: "32%",
     scale: "1.3",
     duration: "2",
