@@ -23,7 +23,7 @@ window.addEventListener('load', function () {
     loader.style.display = 'none';
     content.style.display = 'block';
     initializeScrollTrigger();
-  },8000);
+  },80);
 });
 
 // for responsive nav bar 
