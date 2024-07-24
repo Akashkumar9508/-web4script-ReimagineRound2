@@ -498,3 +498,13 @@ function initializeNavCursorEffects() {
 if (window.matchMedia("(min-width: 768px)").matches) {
   initializeNavCursorEffects();
 }
+
+//water ripple effect
+
+$(document).ready(function() {
+  $('.slide2').ripples({
+      resolution: 512,
+      dropRadius: 20,
+      perturbance: 0.04
+  });
+});
