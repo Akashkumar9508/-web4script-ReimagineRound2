@@ -49,7 +49,7 @@ function initializeScrollTrigger() {
     transform: "translateX(-200%)",
     scrollTrigger: {
       trigger: section2,
-      scroller: "body",
+      // scroller: "body",
       // markers: true,
       start: "top 0%",
       end: "top -200%",
@@ -148,7 +148,7 @@ function initializeScrollTrigger() {
 
 
   threeD.to(".threeDModle", {
-    top: "32%",
+    top: "30%",
     left: "32%",
     scale: "1.3",
     duration: "2",
@@ -508,3 +508,82 @@ $(document).ready(function() {
       perturbance: 0.04
   });
 });
+
+
+// can section 
+
+const can = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section4",
+    // markers:true,
+    start: "510% 50%",
+    end: "550% 50%",
+    scrub: 2,
+  }
+});
+
+can.from(".popRight",{
+  scale:0.8,
+
+  x:0,
+},'pop')
+can.from(".popLeft",{
+  scale:0.8,
+  x:0,
+},'pop');
+can.from(".popText",{
+  scale:0.7,
+},'pop');
+
+can.from(".leftCan",{
+  x:-1000,
+  opacity:0,
+
+},'can');
+
+can.from(".rightCan",{
+  x:1000,
+  opacity:0,
+
+},'can');
+
+can.from(".centerCan",{
+  opacity:0,
+
+});
+
+can.from(".popDiscription",{
+  opacity:0,
+},'can');
+
+
+const footer = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".footer",
+    // markers:true,
+    start: "700% 50%",
+    end: "770% 70%",
+    scrub: true,
+  }
+});
+
+
+footer.from(".leftFooter",{
+  x:-100,
+  opacity:0,
+
+
+},'footer')
+footer.from(".rightFooter",{
+  x:100,
+  opacity:0,
+
+
+},'footer')
+
+footer.from(".footerBottom",{
+  opacity:0,
+  y:100,
+
+
+})
