@@ -6,59 +6,6 @@
   --border-width: 7px;
 }
 
-.cup{
-  transform: translate(-50%, -50%);
-  width: 150px;
-  height: 180px;
-  border: 6px solid black;
-  border-top: 6px solid transparent;
-  border-radius: 15px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  background: url(./Assets/beer.png);
-  background-repeat: repeat-x;
-  animation: animate 10s linear infinite;
-  box-shadow: 0 0 0 6px #fff  ;
-  /* background-size: contain;
-  background-position: center; */
-}
-.sha {
-  background: rgb(0,0,0);
-  background: radial-gradient(circle, rgba(0,0,0,1) 18%, rgba(240,82,3,1) 23%, rgba(191,67,5,1) 32%, rgba(156,56,7,1) 33%, rgba(128,48,8,1) 40%, rgba(114,44,9,1) 41%, rgba(15,14,14,1) 73%);
-}
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-  .sha {
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,1) 32%, rgba(222,158,19,1) 43%, rgba(254,173,0,1) 51%, rgba(222,158,19,1) 56%, rgba(222,158,19,1) 61%, rgba(222,158,19,1) 68%, rgba(15,14,14,1) 100%);    }
-}
-
-.cup::before{
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 100px;
-  border: 6px solid white;
-  right: -56px;
-  top: 40px;
-  border-top-right-radius:10px;
-  border-bottom-right-radius: 10px ;
-}
-@keyframes animate{
-  0%{
-    background-position: 0 100px;
-  }
-  10%{
-    background-position: 0 100px;
-  }
-  40%{
-    background-position: 1000px -70px;
-  }
-  80%{
-    background-position: 2000px -80px;
-  }
-}
 
 html,body{
   user-select: none;
