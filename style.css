@@ -389,7 +389,6 @@ ul li::marker {
 }
 .footerMian{
   background-color:transparent;
-  backdrop-filter: blur(20px);
 }
 ul li {
   cursor: pointer;
