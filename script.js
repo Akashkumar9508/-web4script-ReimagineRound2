@@ -587,3 +587,11 @@ footer.from(".footerBottom",{
 
 
 })
+
+gsap.to(".svg2", {
+  y: "-20px",
+  duration: 2,
+  repeat:-1,
+  ease: "linear",
+  yoyo:true,
+});
