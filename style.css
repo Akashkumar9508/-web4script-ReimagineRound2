@@ -398,3 +398,25 @@ ul li:hover{
   color:blue;
 
 }
+
+
+/* svg animation  */
+
+
+@keyframes svg1 {
+  0%{
+    rotate: 0deg;
+  }
+
+  100%{
+    rotate: 360deg;
+  }
+  
+}
+
+
+
+
+.svg1{
+  animation: svg1 9s linear infinite;
+}
