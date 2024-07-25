@@ -20,7 +20,9 @@ html,body{
   /* background: rgb(251,146,60); */
 background: linear-gradient(0deg, #17153B 20%, #C8ACD6 75%);
 }
-
+.loadertext{
+  text-shadow: -4px 4px 2px rgba(223,132,16,0.46);
+}
 /* Hide scrollbars for the entire website */
 html::-webkit-scrollbar, 
 body::-webkit-scrollbar {
